@@ -1,0 +1,67 @@
+body {
+    font-family: monospace;
+    font-size: 12pt;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.text-center {
+    text-align: center;
+}
+a {
+    color: #000000;
+}
+
+#app {
+    max-width: 390px;
+    background: #000000;
+    border: 2px solid lightblue;
+    overflow: hidden;
+}
+
+header h1 {
+    background: lightblue;
+    color: #ffffff;
+    margin: 0;
+    padding: 0.5rem;
+    text-align: center;
+}
+header h1 a {
+    text-decoration: none;
+}
+
+article {
+    height: 430px;
+    overflow: hidden;
+    color: #ffffff;
+    padding: 0.5rem;
+    position: relative;
+}
+article h2 {
+    margin: 0;
+}
+
+footer {
+    background: lightblue;
+    color: #000000;
+    font-size: 0.6rem;
+    padding: 0.2rem 0.3rem;
+}
+footer:after {
+    content: ' ';
+    display: table;
+    clear: both;
+}
+
+div {
+    margin-bottom: 5px;
+}
+.difficulties {
+    margin: 5px;
+}
+.space {
+    margin-top: 50px;
+}

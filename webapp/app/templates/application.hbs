@@ -1,0 +1,16 @@
+<section id="app">
+    <header>
+        <h1>{{#link-to 'game'}}Connect 4{{/link-to}}</h1>
+    </header>
+    <article>
+        {{outlet}}
+    </article>
+    <footer>
+        <div class="float-left">
+            Powered by Ember.
+        </div>
+        <div class="float-right">
+            {{#link-to 'highscores'}}High-scores{{/link-to}}
+        </div>
+    </footer>
+</section>

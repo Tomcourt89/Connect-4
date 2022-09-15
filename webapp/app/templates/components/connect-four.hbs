@@ -1,0 +1,64 @@
+{{#if playing}}
+    {{#if winner}}
+            Player {{winner}} Won!
+        {{!-- Add highscore --}}
+    {{/if}}
+    {{#if draw}}
+        We'll call it a draw.
+    {{/if}}
+    {{#if desktop}}
+    <button class="float-right"{{action 'start'}}>
+        Restart
+    </button>
+    {{else}}
+    Shake the device to restart
+    {{/if}}
+    <div>
+    {{#if multiplayer}}
+    {{else}}
+    {{#if easy}}
+        Easy Difficulty
+    {{else if medium}}
+        Medium Difficulty
+    {{else if hard}}
+        Hard Difficulty
+    {{/if}}
+    {{/if}}
+    </div>
+    <div>
+        {{!-- Will only show the whose turn it is when a winner hasnt been defined yet. --}}
+        {{#if multiplayer}}
+            {{#if winner}}
+            {{else}}
+                Player {{player}}s turn.
+            {{/if}}
+        {{else}}
+            You are {{player}}!
+            <div class="difficulties">
+                <button {{action 'easy'}}{{action 'start'}}>Easy</button>
+                <button {{action 'medium'}}{{action 'start'}}>Medium</button>
+                <button {{action 'hard'}}{{action 'start'}}>Hard</button>
+            </div>
+        {{/if}}
+
+    </div>
+{{else}}
+    <button {{action 'multiplayer'}}>
+        Multiplayer
+    </button>
+    <div>
+        2 Human controlled players taking alternate turns.
+    </div>
+    <button class="space"{{action 'start'}}>
+        Single Player
+    </button>
+    <div>
+        Single player game taking alternate turns against a computer.
+    </div>
+{{/if}}
+{{!-- <ul>
+    <li>cordova</li>
+    <li>testing (upload to netlify?)</li>
+</ul> --}}
+<canvas id="stage" width="380" height="380"></canvas>
+

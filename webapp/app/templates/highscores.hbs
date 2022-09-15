@@ -1,0 +1,11 @@
+<div class="text-center">
+    <h2>High-scores</h2>
+</div>
+<ol>
+    {{#each model as |item|}}
+    <li>
+        <div class="float-left">{{item.name}}</div>
+        <div class="float-right">{{item.score}}</div>
+    </li>
+    {{/each}}
+</ol>

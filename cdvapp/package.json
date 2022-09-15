@@ -1,0 +1,33 @@
+{
+  "name": "ttt24291129.computing.edgehill.ac.uk",
+  "displayName": "Connect4",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cordova": "^11.0.0"
+  },
+  "devDependencies": {
+    "cordova-android": "^10.1.1",
+    "cordova-plugin-device-motion": "^2.0.1",
+    "cordova-plugin-shake": "^0.7.0",
+    "cordova-plugin-x-toast": "^2.7.3"
+  },
+  "cordova": {
+    "platforms": [
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-x-toast": {},
+      "cordova-plugin-shake": {}
+    }
+  }
+}
